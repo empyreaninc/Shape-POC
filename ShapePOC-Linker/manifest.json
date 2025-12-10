@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "ShapePOC",
+    "minimum_chrome_version": "41",
+    "browser_action": {
+        "default_title": "ShapePOC - Chrome Link"
+    },
+    "permissions": [
+        "management",
+        "storage",
+        "activeTab",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "<all_urls>",
+        "webNavigation"
+    ],
+    "version": "0.1.0",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    }
+}
